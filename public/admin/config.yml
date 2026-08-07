@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: handedthekeys/handedthekeys.github.io
+  branch: main
+
+site_url: https://handedthekeys.github.io
+
+media_folder: src/assets/blog
+public_folder: ../../assets/blog
+
+collections:
+  - name: blog
+    label: Posts
+    label_singular: Post
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: Title
+        name: title
+        widget: string
+
+      - label: Description
+        name: description
+        widget: text
+        hint: Short summary used on the homepage, Blog page, and in search metadata.
+
+      - label: Publication Date
+        name: pubDate
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        picker_utc: true
+
+      - label: Updated Date
+        name: updatedDate
+        widget: datetime
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        picker_utc: true
+        required: false
+
+      - label: Featured Image
+        name: heroImage
+        widget: image
+        required: false
+        choose_url: false
+
+      - label: Post
+        name: body
+        widget: markdown
