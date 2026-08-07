@@ -1,8 +1,10 @@
 ---
-title: "Music Class I Didn't Expect"
-description: "Ten days in a music classroom turned into one of the substitute assignments I enjoyed more than I expected."
-pubDate: "2026-08-07"
-heroImage: "../../assets/blog/music-class-i-didnt-expect.jpg"
+title: Music Class I Didn't Expect
+description: Ten days in a music classroom turned into one of the substitute
+  assignments I enjoyed more than I expected.
+pubDate: 2026-08-07
+updatedDate: 2026-08-07
+heroImage: ../../assets/blog/music-class-i-didnt-expect.jpg
 ---
 
 **Week 5 2026**
