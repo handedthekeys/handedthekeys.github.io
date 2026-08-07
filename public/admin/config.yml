@@ -28,7 +28,7 @@ collections:
         widget: text
         hint: Short summary used on the homepage, Blog page, and in search metadata.
 
-            - label: Publication Date
+      - label: Publication Date
         name: pubDate
         widget: datetime
         format: "YYYY-MM-DDTHH:mm:ss[Z]"
