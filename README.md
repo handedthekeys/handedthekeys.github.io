@@ -160,9 +160,9 @@ This README is the development source of truth and should be updated when signif
 - [x] Add Privacy Policy
 - [x] Add initial Decap CMS configuration
 - [x] Complete remaining Astro sample-content cleanup audit
-- [ ] Configure GitHub Pages deployment
+- [x] Configure GitHub Pages deployment
 - [ ] Complete no-code browser publishing
 - [ ] Add comments
 - [ ] Configure SEO and search services
-- [ ] Publish initial live content
+- [x] Publish initial live content
 - [ ] Prepare for advertising
