@@ -56,6 +56,14 @@ Local preview:
 - Posts may contain additional real photos within the article.
 - The site should be structured so Google AdSense can be added later without redesigning individual pages or adding advertising placeholders during initial development.
 
+## Post Image Behavior
+
+- Featured images are optional when publishing a post.
+- When a featured image is supplied, listings use that real photo.
+- When no featured image is supplied, homepage and blog listings automatically use the shared Handed the Keys default post image.
+- Individual article pages do not display the default image when no real featured image was supplied.
+- The current default post image is temporary and will be replaced with a permanent Handed the Keys branded image after the visual identity is established.
+
 ## Source of Truth
 
 This GitHub repository contains the live source code for Handed the Keys.
