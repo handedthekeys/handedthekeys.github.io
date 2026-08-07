@@ -35,12 +35,12 @@ collections:
         time_format: false
         picker_utc: true
 
-      - label: Updated Date
-        name: updatedDate
+        - label: Publication Date
+        name: pubDate
         widget: datetime
-        date_format: "YYYY-MM-DD"
-        time_format: false
+        format: "YYYY-MM-DDTHH:mm:ss[Z]"
         picker_utc: true
+        hint: Date shown publicly; time is used internally to order posts published on the same day.
         required: false
 
       - label: Featured Image
