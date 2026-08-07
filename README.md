@@ -44,6 +44,18 @@ Local preview:
 
 `http://localhost:4321/`
 
+
+## Publishing Requirements
+
+- Routine publishing must not require editing code, using VS Code, or working from the local development environment.
+- New posts should eventually be publishable through a browser-based CMS from any computer.
+- Publishing a new post must automatically update the homepage, recent stories, and chronological blog archive.
+- The newest published post should automatically become the featured story on the homepage.
+- Featured images are optional.
+- Posts without images must use an intentional text-only layout with no placeholder image or empty image space.
+- Posts may contain additional real photos within the article.
+- The site should be structured so Google AdSense can be added later without redesigning individual pages or adding advertising placeholders during initial development.
+
 ## Source of Truth
 
 This GitHub repository contains the live source code for Handed the Keys.
