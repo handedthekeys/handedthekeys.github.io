@@ -1,0 +1,54 @@
+@import url('https://giscus.app/themes/light.css');
+@import url('https://handedthekeys.github.io/theme-colors.css');
+
+main {
+	--color-btn-text: rgb(var(--gray-dark));
+	--color-btn-bg: var(--paper);
+	--color-btn-border: rgb(var(--gray-light));
+	--color-btn-hover-bg: rgb(var(--gray-light));
+	--color-btn-hover-border: var(--accent);
+	--color-btn-active-bg: rgb(var(--gray-light));
+	--color-btn-active-border: var(--accent-dark);
+	--color-btn-selected-bg: rgb(var(--gray-light));
+
+	--color-btn-primary-text: var(--surface);
+	--color-btn-primary-bg: var(--accent);
+	--color-btn-primary-border: var(--accent-dark);
+	--color-btn-primary-hover-bg: var(--accent-dark);
+	--color-btn-primary-hover-border: var(--accent-dark);
+	--color-btn-primary-selected-bg: var(--accent-dark);
+
+	--color-action-list-item-default-hover-bg: rgba(var(--gray-light), 45%);
+	--color-segmented-control-bg: rgba(var(--gray-light), 45%);
+	--color-segmented-control-button-bg: var(--surface);
+	--color-segmented-control-button-selected-border: var(--accent);
+
+	--color-fg-default: rgb(var(--gray-dark));
+	--color-fg-muted: rgb(var(--gray));
+	--color-fg-subtle: rgb(var(--gray));
+
+	--color-canvas-default: transparent;
+	--color-canvas-overlay: var(--surface);
+	--color-canvas-inset: var(--paper);
+	--color-canvas-subtle: var(--paper);
+
+	--color-border-default: rgb(var(--gray-light));
+	--color-border-muted: rgba(var(--gray-light), 70%);
+	--color-neutral-muted: rgba(var(--gray-light), 60%);
+
+	--color-accent-fg: var(--accent);
+	--color-accent-emphasis: var(--accent-dark);
+	--color-accent-muted: color-mix(in srgb, var(--accent) 35%, transparent);
+	--color-accent-subtle: color-mix(in srgb, var(--accent) 10%, var(--surface));
+
+	--color-scale-gray-1: rgb(var(--gray-light));
+	--color-scale-blue-1: color-mix(in srgb, var(--accent) 20%, var(--surface));
+
+	--color-social-reaction-bg-hover: rgba(var(--gray-light), 60%);
+	--color-social-reaction-bg-reacted-hover:
+		color-mix(in srgb, var(--accent) 20%, var(--surface));
+}
+
+.gsc-homepage-bg {
+	background-color: transparent;
+}
