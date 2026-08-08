@@ -8,31 +8,26 @@ const blog = defineCollection({
 
 	// Type-check frontmatter using a schema.
 	schema: ({ image }) =>
-		z.object({
-			title: z.string(),
-			description: z.string(),
+		z
+			.object({
+				title: z.string(),
+				description: z.string(),
+				pubDate: z.union([z.string(), z.date()]),
+				updatedDate: z.coerce.date().optional(),
+				heroImage: z.optional(image()),
+			})
+			.transform((data) => {
+				const sourceValue =
+					data.pubDate instanceof Date
+						? data.pubDate.toISOString()
+						: data.pubDate.replace('@', 'T');
 
-			// Preserve the authored publication date while keeping Date behavior
-			// for chronological sorting and RSS.
-			pubDate: z.union([z.string(), z.date()]).transform((value) => {
-				if (value instanceof Date) {
-					return Object.assign(value, {
-						sourceValue: value.toISOString(),
-					});
-				}
-
-				const sourceValue = value.includes('@')
-					? value.replace('@', 'T')
-					: value;
-
-				return Object.assign(new Date(sourceValue), {
-					sourceValue,
-				});
+				return {
+					...data,
+					pubDate: new Date(sourceValue),
+					pubDateCalendarDate: sourceValue.slice(0, 10),
+				};
 			}),
-
-			updatedDate: z.coerce.date().optional(),
-			heroImage: z.optional(image()),
-		}),
 });
 
 export const collections = { blog };

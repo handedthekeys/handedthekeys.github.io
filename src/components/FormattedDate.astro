@@ -1,23 +1,20 @@
 ---
-type DateWithSource = Date & {
-	sourceValue?: string;
-};
-
 interface Props {
-	date: DateWithSource;
+	date: Date;
+	calendarDate?: string;
 }
 
-const { date } = Astro.props;
+const { date, calendarDate } = Astro.props;
 
-const sourceValue = date.sourceValue ?? date.toISOString();
-const calendarDate = sourceValue.slice(0, 10);
-const [year, month, day] = calendarDate.split('-').map(Number);
+const displayDate = calendarDate ?? date.toISOString().slice(0, 10);
+const [year, month, day] = displayDate.split('-').map(Number);
 
 const formattedDate = new Intl.DateTimeFormat('en-US', {
 	year: 'numeric',
 	month: 'long',
 	day: 'numeric',
-}).format(new Date(year, month - 1, day));
+	timeZone: 'UTC',
+}).format(new Date(Date.UTC(year, month - 1, day)));
 ---
 
-<time datetime={sourceValue}>{formattedDate}</time>
+<time datetime={date.toISOString()}>{formattedDate}</time>

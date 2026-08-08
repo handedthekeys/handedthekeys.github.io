@@ -175,7 +175,10 @@ const recentPosts = posts.slice(1, 4);
 
 				<div class="latest-copy">
 					<p class="story-date">
-						<FormattedDate date={latestPost.data.pubDate} />
+						<FormattedDate
+	date={latestPost.data.pubDate}
+	calendarDate={latestPost.data.pubDateCalendarDate}
+/>
 					</p>
 
 					<a href={`/blog/${latestPost.id}/`}>
@@ -209,7 +212,10 @@ const recentPosts = posts.slice(1, 4);
 />
 
 										<p class="story-date">
-											<FormattedDate date={post.data.pubDate} />
+											<FormattedDate
+	date={post.data.pubDate}
+	calendarDate={post.data.pubDateCalendarDate}
+/>
 										</p>
 
 										<h3>{post.data.title}</h3>
