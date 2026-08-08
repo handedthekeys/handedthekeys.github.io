@@ -98,7 +98,7 @@ Individual posts:
 - Article body
 - Additional real photos supported/planned through the publishing editor
 - Giscus comments powered by GitHub Discussions
-- Previous Post / Next Post navigation planned to let readers continue through the chronological archive.
+- Previous Post / Next Post navigation lets readers continue through the chronological archive.
 
 Footer:
 
@@ -179,6 +179,7 @@ This README is the development source of truth and should be updated when signif
 - [x] Configure GitHub Pages deployment
 - [x] Complete no-code browser publishing
 - [x] Add comments
+- [x] Add Previous Post / Next Post navigation
 - [ ] Configure SEO and search services
 - [x] Publish initial live content
 - [ ] Prepare for advertising
