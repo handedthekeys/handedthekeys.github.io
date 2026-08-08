@@ -2,27 +2,22 @@
 title: Students From Previous Years
 description: I really enjoy seeing my previous students.  This week I was able
   to talk to a good handful of them.
-pubDate: 2026-08-08T14:35:00Z
+pubDate: 2026-08-08T14:35:00.000Z
+updatedDate: 2026-08-08
 ---
-Week 6 2026
+**Week 6 2026**
 
-Monday
+**Monday**
 
 This class was different.  It was a math class, for the most part.  There was a co-teacher for four of the periods and one class period I was on my own.  The classroom looked very much taken care of.  I could see many different decorations and even hand written posters of math concepts to serve as guides for the students.  I think I even saw some class rules as well.  I know I saw the school bell schedules written out and big enough for all to see.  I didn't have to do much since the co-teacher was there.  She took over the class and I helped just a little.  During two class periods I passed out little tickets for students who were participating in the whole group class instruction and for the students who elected to put their phones away for its duration.  
 
-
-
 I did have to get called away for the prep period for a teacher who had a meeting.  I was all set to watch the class for him, but he came back in around 10 minutes, letting me know the meeting was cancelled.
-
-
 
 I saw a four students from my elementary teaching days.  One was from my exact class that I taught all year.  I even used to see her at my local grocery store sometimes.  This school year, when I first saw her, I sensed she was trying to avoid me.  I made a bit of a joke about it to her.  Only time will tell later what's going on.  I really like to see my past students again.  
 
 I also got to speak to a student I met last year at a different school.  The last time we spoke we talked about origami, her experience at a new school, and how her environment affected her focus and grades.
 
-
-
-Tuesday
+**Tuesday**
 
 This English class is very relaxed.  I have a decent lesson plan.  The students are respectful and they seem to miss their teacher.  I had no issues whatsoever.  This teacher has a messy desk.  Not in a filthy way, but there are piles of papers all around, organized, but piles.  I can tell this teacher is either very disorganized, or it might be a sign of high intelligence.  
 
@@ -34,9 +29,9 @@ There was almost no trash on the floor by the end of the day and I only had to p
 
 Prep period was the last one of the day, so usually that means I get to leave early, beating any traffic.
 
-Wednesday
+**Wednesday**
 
-This class runs like clockwork!  The students come in, quietly, grab their journals and start writing for the first 10 minutes.  There is a seating chart and they stick to it.  Once they are done writing, they come up to me so that I can initial that they wrote a whole page.  The teacher also leaves the day's work written on the board so the students simply have to look up to know what to do.  There are clear classroom rules on the board as well.  The students follow the rule.  In this environment, it feels like the teacher is very strict. The desks and computers are all numbered.  Each student takes the computer assigned to them by desk number.  Excellent!
+This class runs like clockwork!  The students come in, quietly, grab their journals and start writing for the first 10 minutes.  There is a seating chart and they stick to it.  Once they are done writing, they come up to me so that I can initial that they wrote a whole page.  The teacher also leaves the day's work written on the board so the students simply have to look up to know what to do.  There are clear classroom rules on the board as well.  The students follow the rules.  In this environment, it feels like the teacher is very strict. The desks and computers are all numbered.  Each student takes the computer assigned to them by desk number.  Excellent!
 
 There are some decorations around the room, not too much, but it seems to fit the environment.  She has a floor heater too, so nice!
 
@@ -44,9 +39,7 @@ One class period was not an honors class right before lunch. One student came in
 
 That same girl kept cursing, I had to write her a referral to the office.  I did this because I wanted a record of her behavior.  I know that many teachers deal with so much disrespect and poor behavior and it just goes unchecked.  I usually just maintain the rules of the classroom.  I understand that as a visitor to any class, especially if I am most likely only going to be there for one day, I cannot expect the students to fully adjust to my expectations, but I can hold them to the standards that the teacher has already set in place.  I am looking for which rules the teacher actually enforces and which are ignored.  This rule was posted on the classroom whiteboard, along with no eating or drinking.  I assumed that meant no drinks other than water. I warned this girl a few times.  It wasn't a lot of work for me to write a referral, but I still did not want to do it.  I did find a way to do it that was a bit easier.  I was able to email it to the teacher and an administrator.  That way, there is a digital paper trail.  I wonder sometimes when I have written paper referrals, that maybe they were just thrown away.
 
-
-
-Thursday
+**Thursday**
 
 This class is well decorated.  It is a math class for 9th and 11th graders.  During 1st period, one of the girls was drawing on the desk.  I noticed and made sure to talk to her.  I just asked if she was going to erase it later.  She said she just needed hand sanitizer and it would come off.  By the middle of the class I saw her trying to get rid of the drawings.  It looks like she used water and a napkin.  She was scrubbing away to get it off and in an almost panic.  I could not find any hand sanitizer for her.  
 
@@ -68,6 +61,6 @@ As simple as the work was today, I see that at least one student is copying the 
 
 This school uses colored clip boards for restroom passes. It seemed like a great idea, instead of using small passes students could easily hide.  The issue I have seen is that these clip boards are plastic and some have already broken.  Now, obviously, the students are not taking care of them but perhaps next year the school will consider more sturdy objects.  I have seen some awesome restroom passes in the past.  My favorite is probably the 3'x3' sheet of wood for a third grade class. Another noteworthy one is a toilet seat on a string.
 
-Random thought:  Restrooms are pretty important.  I remember watching a scene in the show Seinfeld.  Geroge Costanza was bragging about his knowledge of the best restroom facilities in the city.  It was so strange to me, but now as an adult. I get it.  No one wants to walk into a restroom that has a terrible odor, broken amenities, or a lack of supplies.  So, for the most part, any school I go to I start to figure out which restrooms I would use.
+Random thought:  Restrooms are pretty important.  I remember watching a scene in the show Seinfeld.  George Costanza was bragging about his knowledge of the best restroom facilities in the city.  It was so strange to me, but now as an adult. I get it.  No one wants to walk into a restroom that has a terrible odor, broken amenities, or a lack of supplies.  So, for the most part, any school I go to I start to figure out which restrooms I would use.
 
 I like to use the single-use restrooms.  The perfect one would have warm water, paper towels, and the door should open outwards.
