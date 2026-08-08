@@ -1,7 +1,7 @@
 ---
-title: "Title: Browser Publishing Test"
+title: Browser Publishing Test
 description: Temporary post used to verify browser publishing for Handed the Keys.
-pubDate: 2026-08-07
+pubDate: 2026-08-07T12:00:00Z
 ---
 This is a temporary post created entirely through the Handed the Keys browser publishing system.
 
