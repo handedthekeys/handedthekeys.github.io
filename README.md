@@ -29,7 +29,8 @@ The name comes from a recurring part of substitute teaching: arriving for an ass
 - GitHub
 - GitHub Pages
 - Visual Studio Code
-- Decap CMS for planned browser-based publishing
+- Decap CMS for browser-based publishing
+- Cloudflare Worker for GitHub OAuth authentication
 - Giscus planned for comments
 
 ## Development
@@ -97,6 +98,7 @@ Individual posts:
 - Article body
 - Additional real photos supported/planned through the publishing editor
 - Comments planned
+- Previous Post / Next Post navigation planned to let readers continue through the chronological archive.
 
 Footer:
 
@@ -118,21 +120,35 @@ Footer:
 
 ## Browser Publishing
 
-Decap CMS admin files are configured under:
+Decap CMS is live at:
 
-`public/admin`
+`https://handedthekeys.github.io/admin/`
 
-The local Decap login page loads successfully.
+Routine publishing can be completed entirely from a normal web browser without VS Code, manual Markdown editing, Git commands, or access to the development computer.
 
-Remaining publishing work includes:
+The publishing workflow uses:
 
-- Configure GitHub authentication.
-- Connect Decap to the live repository.
-- Verify creating a post from the browser.
-- Verify editing an existing post from the browser.
-- Verify image uploads.
-- Verify inserting additional images within article content.
-- Verify a browser-published post automatically deploys and updates Home and Blog.
+- Decap CMS hosted with the site under `public/admin`.
+- The GitHub backend connected directly to this repository.
+- GitHub OAuth authentication through a Cloudflare Worker.
+- GitHub Actions to rebuild and deploy the site automatically after publishing.
+
+Browser publishing has been verified for:
+
+- Logging into Decap from the live admin page.
+- Viewing and editing existing posts.
+- Creating and deleting posts.
+- Uploading optional featured images.
+- Publishing posts without featured images.
+- Inserting additional images within article content.
+- Publishing changes directly to GitHub.
+- Automatic GitHub Pages deployment.
+- Automatic Latest Post, Recent Posts, and Blog archive updates.
+- Multiple posts published on the same day using publication timestamps.
+- Publication dates based on the publisher's local browser timezone.
+- Media deletion through the Decap Media page.
+
+Uploaded media is not automatically removed when a post is deleted. Unused images should be removed manually through Decap's Media page.
 
 ## Source of Truth
 
@@ -142,7 +158,7 @@ This README is the development source of truth and should be updated when signif
 
 ## Status
 
-**Current phase:** Initial development / launch preparation
+**Current phase:** Live site / comments and launch refinement
 
 - [x] Brand selected: Handed the Keys
 - [x] GitHub organization created
@@ -161,7 +177,7 @@ This README is the development source of truth and should be updated when signif
 - [x] Add initial Decap CMS configuration
 - [x] Complete remaining Astro sample-content cleanup audit
 - [x] Configure GitHub Pages deployment
-- [ ] Complete no-code browser publishing
+- [x] Complete no-code browser publishing
 - [ ] Add comments
 - [ ] Configure SEO and search services
 - [x] Publish initial live content
