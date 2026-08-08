@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://handedthekeys.github.io/sitemap-index.xml
