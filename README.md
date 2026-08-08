@@ -31,7 +31,7 @@ The name comes from a recurring part of substitute teaching: arriving for an ass
 - Visual Studio Code
 - Decap CMS for browser-based publishing
 - Cloudflare Worker for GitHub OAuth authentication
-- Giscus planned for comments
+- Giscus and GitHub Discussions for comments
 
 ## Development
 
@@ -52,7 +52,7 @@ Decap CMS local preview:
 ## Publishing Requirements
 
 - Routine publishing must not require editing code, using VS Code, or working from the local development environment.
-- New and existing posts should eventually be publishable and editable through a browser-based CMS from any computer.
+- New and existing posts are publishable and editable through a browser-based CMS from any computer.
 - Publishing a new post must automatically update the homepage, Recent Posts, and chronological Blog archive.
 - The newest published post should automatically become the Latest Post on the homepage.
 - Featured images are optional.
@@ -97,7 +97,7 @@ Individual posts:
 - Optional featured photo
 - Article body
 - Additional real photos supported/planned through the publishing editor
-- Comments planned
+- Giscus comments powered by GitHub Discussions
 - Previous Post / Next Post navigation planned to let readers continue through the chronological archive.
 
 Footer:
@@ -158,7 +158,7 @@ This README is the development source of truth and should be updated when signif
 
 ## Status
 
-**Current phase:** Live site / comments and launch refinement
+**Current phase:** Live site / launch refinement
 
 - [x] Brand selected: Handed the Keys
 - [x] GitHub organization created
@@ -178,7 +178,7 @@ This README is the development source of truth and should be updated when signif
 - [x] Complete remaining Astro sample-content cleanup audit
 - [x] Configure GitHub Pages deployment
 - [x] Complete no-code browser publishing
-- [ ] Add comments
+- [x] Add comments
 - [ ] Configure SEO and search services
 - [x] Publish initial live content
 - [ ] Prepare for advertising
