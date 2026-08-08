@@ -6,6 +6,7 @@ import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 import { DEFAULT_POST_IMAGE, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import PORTRAIT_POST_BACKGROUND from '../assets/handed-the-keys-default-post-portrait.png';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -13,6 +14,10 @@ const posts = (await getCollection('blog')).sort(
 
 const latestPost = posts[0];
 const recentPosts = posts.slice(1, 4);
+
+const latestIsPortrait =
+	latestPost?.data.heroImage &&
+	latestPost.data.heroImage.height > latestPost.data.heroImage.width;
 
 const websiteSchema = {
 	'@context': 'https://schema.org',
@@ -35,40 +40,77 @@ const websiteSchema = {
 			}
 
 			.intro {
-				margin-bottom: 4rem;
-				text-align: center;
-			}
+	max-width: 760px;
+	margin: 0 auto 4.5rem;
+	padding: 2.25rem 1rem 1rem;
+	text-align: center;
+}
 
-			.intro h1 {
-				margin-bottom: 0.25em;
-			}
+.intro h1 {
+	margin: 0 0 0.2em;
+	letter-spacing: -0.025em;
+}
 
-			.intro .tagline {
-				margin-top: 0;
-				font-size: 1.25rem;
-				color: rgb(var(--gray));
-			}
+.intro .tagline {
+	margin: 0 0 1.1rem;
+	font-size: 1.25rem;
+	font-style: italic;
+	color: var(--accent-dark);
+}
+
+.intro > p:last-child {
+	max-width: 650px;
+	margin: 0 auto;
+	color: rgb(var(--gray));
+}
 
 			.latest-story {
-	margin-bottom: 4rem;
+	margin-bottom: 4.5rem;
+	padding: 2.25rem 0 2.75rem;
+	border-top: 1px solid rgb(var(--gray-light));
+	border-bottom: 1px solid rgb(var(--gray-light));
 }
 
 .latest-feature {
 	display: grid;
 	grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-	gap: 2.5rem;
+	gap: 3rem;
 	align-items: center;
 }
 
-.latest-story img {
+.story-media {
+	display: flex;
+	justify-content: center;
+}
+
+.story-media img {
 	display: block;
 	width: auto;
 	max-width: 100%;
 	max-height: 520px;
 	height: auto;
-	margin: 0 auto;
 	border-radius: 12px;
 	box-shadow: var(--box-shadow);
+}
+
+.story-media.portrait {
+	align-items: center;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+	box-shadow: var(--box-shadow);
+}
+
+.story-media.portrait img {
+	width: auto;
+	max-width: 100%;
+	height: 100%;
+	max-height: none;
+	object-fit: contain;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .latest-copy {
@@ -84,14 +126,27 @@ const websiteSchema = {
 				color: rgb(var(--gray));
 			}
 
+			.latest-story .section-label {
+	margin: 0 0 1.4rem;
+	color: var(--accent);
+}
+
 			.story-date {
 				margin: 0 0 0.5rem;
 				color: rgb(var(--gray));
 			}
 
 			.latest-story h2 {
-				margin: 0 0 0.5rem;
-			}
+	margin: 0 0 0.65rem;
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height: 1.08;
+	letter-spacing: -0.02em;
+}
+
+.latest-copy > p:not(.story-date) {
+	margin: 0 0 1rem;
+	line-height: 1.65;
+}
 
 			.latest-story a,
 			.recent-stories a {
@@ -103,39 +158,122 @@ const websiteSchema = {
 				color: rgb(var(--black));
 			}
 
-			.read-more {
-				font-weight: 700;
-			}
+			.latest-copy .read-more {
+	display: inline-block;
+	margin-top: 0.25rem;
+	padding-bottom: 0.15rem;
+	border-bottom: 2px solid var(--accent);
+	color: var(--accent-dark);
+}
+
+.latest-copy .read-more:hover {
+	color: var(--accent);
+}
 
 			.recent-stories {
-				margin-bottom: 4rem;
-			}
+	margin-bottom: 4.5rem;
+}
+
+.recent-stories .section-label {
+	margin: 0 0 1.4rem;
+	color: var(--accent);
+}
 
 			.story-grid {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 2rem;
-			}
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 2rem;
+}
 
-			.story-card img {
-				width: 100%;
-				margin-bottom: 1rem;
-				border-radius: 12px;
-			}
+.story-card {
+	min-width: 0;
+}
 
-			.story-card h3 {
-				margin: 0 0 0.5rem;
-			}
+.story-card:only-child {
+	width: 100%;
+	max-width: 560px;
+	justify-self: center;
+}
 
-			.story-card p {
-				margin-top: 0.5rem;
-			}
+.story-card-media {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	border-radius: 12px;
+}
+
+.story-card-photo {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 12px;
+}
+
+.story-card-media.portrait {
+	align-items: center;
+	aspect-ratio: 16 / 9;
+	background-size: cover;
+	background-position: center;
+}
+
+.story-card-media.portrait .story-card-photo {
+	width: auto;
+	max-width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius: 0;
+}
+
+.story-card h3 {
+	margin: 0 0 0.5rem;
+	font-size: clamp(1.5rem, 2.5vw, 2rem);
+	line-height: 1.15;
+	letter-spacing: -0.015em;
+}
+
+.story-card .story-date {
+	margin: 0 0 0.45rem;
+	font-size: 0.9rem;
+}
+
+.story-card > p:last-child {
+	margin: 0.5rem 0 0;
+	line-height: 1.6;
+	color: rgb(var(--gray));
+}
 
 			.about {
-				margin-bottom: 2rem;
-				padding-top: 2rem;
-				border-top: 1px solid rgb(var(--gray-light));
-			}
+	max-width: 760px;
+	margin: 0 auto 2.5rem;
+	padding: 2.5rem 1rem 0;
+	border-top: 1px solid rgb(var(--gray-light));
+	text-align: center;
+}
+
+.about .section-label {
+	margin: 0 0 0.75rem;
+	color: var(--accent);
+}
+
+.about > p:not(.section-label) {
+	max-width: 680px;
+	margin: 0 auto 1rem;
+	line-height: 1.65;
+	color: rgb(var(--gray));
+}
+
+.about .read-more {
+	display: inline-block;
+	padding-bottom: 0.15rem;
+	border-bottom: 2px solid var(--accent);
+	color: var(--accent-dark);
+}
+
+.about .read-more:hover {
+	color: var(--accent);
+}
 
 			@media (max-width: 720px) {
 	.intro,
@@ -175,13 +313,25 @@ const websiteSchema = {
 			<p class="section-label">Latest Post</p>
 
 			<div class="latest-feature">
-				<a href={`/blog/${latestPost.id}/`}>
-					<Image
-						width={960}
-						src={latestPost.data.heroImage ?? DEFAULT_POST_IMAGE}
-						alt=""
-					/>
-				</a>
+				<a
+	class:list={[
+		'story-media',
+		'latest-media',
+		{ portrait: latestIsPortrait },
+	]}
+	style={
+		latestIsPortrait
+			? `background-image: url(${PORTRAIT_POST_BACKGROUND.src});`
+			: undefined
+	}
+	href={`/blog/${latestPost.id}/`}
+>
+	<Image
+		width={960}
+		src={latestPost.data.heroImage ?? DEFAULT_POST_IMAGE}
+		alt=""
+	/>
+</a>
 
 				<div class="latest-copy">
 					<p class="story-date">
@@ -214,25 +364,44 @@ const websiteSchema = {
 						<div class="story-grid">
 							{recentPosts.map((post) => (
 								<article class="story-card">
-									<a href={`/blog/${post.id}/`}>
-										<Image
-	width={720}
-	src={post.data.heroImage ?? DEFAULT_POST_IMAGE}
-	alt=""
-/>
+	<a
+		class:list={[
+			'story-card-media',
+			{
+				portrait:
+					post.data.heroImage &&
+					post.data.heroImage.height > post.data.heroImage.width,
+			},
+		]}
+		style={
+			post.data.heroImage &&
+			post.data.heroImage.height > post.data.heroImage.width
+				? `background-image: url(${PORTRAIT_POST_BACKGROUND.src});`
+				: undefined
+		}
+		href={`/blog/${post.id}/`}
+	>
+		<Image
+			class="story-card-photo"
+			width={720}
+			src={post.data.heroImage ?? DEFAULT_POST_IMAGE}
+			alt=""
+		/>
+	</a>
 
-										<p class="story-date">
-											<FormattedDate
-	date={post.data.pubDate}
-	calendarDate={post.data.pubDateCalendarDate}
-/>
-										</p>
+	<p class="story-date">
+		<FormattedDate
+			date={post.data.pubDate}
+			calendarDate={post.data.pubDateCalendarDate}
+		/>
+	</p>
 
-										<h3>{post.data.title}</h3>
-									</a>
+	<a href={`/blog/${post.id}/`}>
+		<h3>{post.data.title}</h3>
+	</a>
 
-									<p>{post.data.description}</p>
-								</article>
+	<p>{post.data.description}</p>
+</article>
 							))}
 						</div>
 					</section>

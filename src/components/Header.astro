@@ -1,58 +1,117 @@
 ---
+import { Image } from 'astro:assets';
 import { SITE_TITLE } from '../consts';
+import HTKLogo from '../assets/HTK.png';
 import HeaderLink from './HeaderLink.astro';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2>
+			<a class="brand-link" href="/">
+				<Image class="brand-mark" src={HTKLogo} alt="" width={34} height={34} />
+				<span>{SITE_TITLE}</span>
+			</a>
+		</h2>
+
 		<div class="internal-links">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 		</div>
+
 		<div class="header-spacer" aria-hidden="true"></div>
 	</nav>
 </header>
+
 <style>
 	header {
-	margin: 0;
-	padding: 0 1.5em;
-	background: #f8f3e9;
-	border-bottom: 1px solid rgb(var(--gray-light));
-}
-	h2 {
-	margin: 0;
-	font-size: 1.15em;
-	letter-spacing: -0.02em;
-}
+		margin: 0;
+		padding: 0 1.5em;
+		background: #f8f3e9;
+		border-bottom: 1px solid rgb(var(--gray-light));
+	}
 
-	h2 a,
-	h2 a.active {
+	nav {
+		display: grid;
+		grid-template-columns: 1fr auto 1fr;
+		align-items: center;
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 1.15em;
+		letter-spacing: -0.02em;
+	}
+
+	.brand-link,
+	.brand-link.active {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.55em;
+		padding: 0.65em 0;
+		border-bottom: 0;
 		text-decoration: none;
 	}
-	nav {
-	display: grid;
-	grid-template-columns: 1fr auto 1fr;
-	align-items: center;
-}
 
-.internal-links {
-	justify-self: center;
-}
+	.brand-mark {
+		display: block;
+		width: 34px;
+		height: 34px;
+		flex-shrink: 0;
+	}
 
-.social-links {
-	justify-self: end;
-}
+	.internal-links {
+		justify-self: center;
+	}
+
+	.header-spacer {
+		justify-self: end;
+	}
+
 	nav a {
 		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
 	}
 
+	@media (max-width: 720px) {
+		header {
+			padding: 0 1em;
+		}
+
+		nav {
+			grid-template-columns: 1fr;
+		}
+
+		h2 {
+			justify-self: start;
+		}
+
+		.brand-link,
+		.brand-link.active {
+			padding: 0.7em 0 0.55em;
+		}
+
+		.internal-links {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			justify-self: stretch;
+		}
+
+		.internal-links a {
+			padding: 0.7em 0.65em;
+		}
+
+		.header-spacer {
+			display: none;
+		}
+	}
 </style>
