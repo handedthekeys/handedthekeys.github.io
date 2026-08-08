@@ -1,18 +1,23 @@
 ---
+type DateWithSource = Date & {
+	sourceValue?: string;
+};
+
 interface Props {
-	date: Date;
+	date: DateWithSource;
 }
 
 const { date } = Astro.props;
----
 
-<time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
+const sourceValue = date.sourceValue ?? date.toISOString();
+const calendarDate = sourceValue.slice(0, 10);
+const [year, month, day] = calendarDate.split('-').map(Number);
+
+const formattedDate = new Intl.DateTimeFormat('en-US', {
 	year: 'numeric',
 	month: 'short',
 	day: 'numeric',
-	timeZone: 'UTC',
-})
-	}
-</time>
+}).format(new Date(year, month - 1, day));
+---
+
+<time datetime={sourceValue}>{formattedDate}</time>

@@ -31,8 +31,8 @@ collections:
       - label: Publication Date
         name: pubDate
         widget: datetime
-        format: "YYYY-MM-DDTHH:mm:ss[Z]"
-        picker_utc: true
+        format: "YYYY-MM-DD[@]HH:mm:ssZ"
+        picker_utc: false
         hint: Date shown publicly; time is used internally to order posts published on the same day.
 
       - label: Updated Date
