@@ -150,6 +150,18 @@ Browser publishing has been verified for:
 
 Uploaded media is not automatically removed when a post is deleted. Unused images should be removed manually through Decap's Media page.
 
+## Search and SEO
+
+- Google Search Console ownership verified.
+- XML sitemap generated automatically by Astro and submitted to Google Search Console.
+- `robots.txt` allows public crawling and identifies the sitemap.
+- Decap CMS admin page is marked `noindex`.
+- Canonical URLs, meta descriptions, Open Graph metadata, and Twitter metadata are configured.
+- Homepage includes validated `WebSite` structured data.
+- Individual posts include validated `BlogPosting` structured data.
+- Google confirmed the homepage and sitemap are crawlable and indexable.
+- Homepage indexing has been requested through Google Search Console.
+
 ## Source of Truth
 
 This GitHub repository contains the live source code for Handed the Keys.
@@ -180,6 +192,6 @@ This README is the development source of truth and should be updated when signif
 - [x] Complete no-code browser publishing
 - [x] Add comments
 - [x] Add Previous Post / Next Post navigation
-- [ ] Configure SEO and search services
+- [x] Configure SEO and search services
 - [x] Publish initial live content
 - [ ] Prepare for advertising
