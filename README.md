@@ -194,4 +194,5 @@ This README is the development source of truth and should be updated when signif
 - [x] Add Previous Post / Next Post navigation
 - [x] Configure SEO and search services
 - [x] Publish initial live content
-- [ ] Prepare for advertising
+- [x] Prepare site architecture for future advertising
+- [ ] Apply for advertising after sufficient content is published
