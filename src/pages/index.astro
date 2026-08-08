@@ -13,13 +13,23 @@ const posts = (await getCollection('blog')).sort(
 
 const latestPost = posts[0];
 const recentPosts = posts.slice(1, 4);
+
+const websiteSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'WebSite',
+	name: SITE_TITLE,
+	url: 'https://handedthekeys.github.io/',
+	description: SITE_DESCRIPTION,
+};
+---
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+	<style>
 			main {
 				width: 960px;
 			}

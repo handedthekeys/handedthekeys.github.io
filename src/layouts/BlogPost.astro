@@ -26,12 +26,30 @@ const {
 	previousPost,
 	nextPost,
 } = Astro.props;
+
+const blogPostingSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'BlogPosting',
+	headline: title,
+	description,
+	datePublished: pubDate.toISOString(),
+	...(updatedDate && { dateModified: updatedDate.toISOString() }),
+	mainEntityOfPage: {
+		'@type': 'WebPage',
+		'@id': Astro.url.href,
+	},
+	...(heroImage && {
+		image: [new URL(heroImage.src, Astro.url.origin).href],
+	}),
+};
+---
 ---
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
-		<style>
+	<BaseHead title={title} description={description} />
+	<script type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+	<style>
 			main {
 				width: calc(100% - 2em);
 				max-width: 100%;
