@@ -6,12 +6,11 @@ pubDate: 2026-08-07
 updatedDate: 2026-08-07
 heroImage: ../../assets/blog/music-class-i-didnt-expect.jpg
 ---
-
 **Week 5 2026**
 
 **Music**
 
-Last week I finished up my 10th consecutive day in Mr. E's class. It is rare that I would do something like this without knowing the class, but I saw that it was a music class at a school that I rarely have any troubles, so I went for it. I do not regret it at all. I enjoyed that class more than usual. I did not have to do much, but I did because I actually knew a little bit of what I was doing.
+Last week I finished up my 10th consecutive day in a music class. It is rare that I would do something like this without knowing the class, but I saw that it was a music class at a school that I rarely have any troubles, so I went for it. I do not regret it at all. I enjoyed that class more than usual. I did not have to do much, but I did because I actually knew a little bit of what I was doing.
 
 There were 6 class periods with students: two guitar classes, and four band classes. I really liked that the band classes had student conductors. This helped so much because the teacher already set up a system that gave some authority to one of their peers so that everything wasn't solely on me to maintain. Normally this is fine, but I imagine a stranger coming into this class with no music experience whatsoever would have a really hard time. I appreciate the teacher for that.
 
