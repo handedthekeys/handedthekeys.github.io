@@ -96,7 +96,7 @@ Individual posts:
 - Description
 - Optional featured photo
 - Article body
-- Additional real photos supported/planned through the publishing editor
+- Additional real photos supported through the publishing editor
 - Giscus comments powered by GitHub Discussions
 - Previous Post / Next Post navigation lets readers continue through the chronological archive.
 
