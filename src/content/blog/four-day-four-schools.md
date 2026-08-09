@@ -2,6 +2,7 @@
 title: Four Days, Four Schools
 description: "This week I went to four different schools, each with a different culture. "
 pubDate: 2026-08-09@14:19:00-07:00
+heroImage: ../../assets/blog/20260210_103855.jpg
 ---
 **Week 7 2026**
 
