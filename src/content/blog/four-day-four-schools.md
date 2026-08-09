@@ -1,5 +1,5 @@
 ---
-title: Four Day, Four Schools
+title: Four Days, Four Schools
 description: "This week I went to four different schools, each with a different culture. "
 pubDate: 2026-08-09@14:19:00-07:00
 ---
