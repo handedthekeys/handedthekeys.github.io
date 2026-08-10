@@ -86,22 +86,23 @@ Homepage:
 - Automatic Recent Posts
 - Short About Handed the Keys section
 
-Blog:
+## Blog:
 
 - Complete chronological archive sorted newest-first
+- Post descriptions are displayed in the archive to help readers choose what to read.
 
-Individual posts:
+## Individual posts:
 
-- Title
-- Publication date
-- Description
-- Optional featured photo
+- Optional featured photo appears first when one is supplied.
+- Title appears first when no featured photo is supplied.
+- Publication date appears directly below the title.
+- Description metadata supports listings and SEO.
 - Article body
 - Additional real photos supported through the publishing editor
 - Giscus comments powered by GitHub Discussions
-* Previous Post / Home / Next Post navigation lets readers continue through the chronological archive or return directly to the homepage.
+- Previous Post / Home / Next Post navigation lets readers continue through the chronological archive or return directly to the homepage.
 
-Footer:
+## Footer:
 
 - Copyright
 - Privacy Policy
@@ -117,6 +118,8 @@ Footer:
 - Headings use Georgia / Times New Roman-style serif typography.
 - Body text uses Atkinson.
 - Current palette uses warm cream, muted green, and charcoal.
+- The site uses a continuous warm cream page background rather than the original limited-height Astro/Bear Blog gradient.
+- Muted green is used selectively for section labels, links, active states, and hover interactions rather than as a dominant background color.
 - Permanent HTK favicon assets and branded default post image have replaced the Astro placeholders.
 
 ## Browser Publishing
@@ -173,7 +176,9 @@ This README is the development source of truth and should be updated when signif
 
 **Current phase:** Live site / launch refinement
 
-* First visual-polish pass completed for the homepage, shared header, post navigation, and portrait-image presentation.
+- Visual-polish pass completed across the homepage, Blog archive, shared header, article navigation, and article presentation.
+- Current visual system includes the continuous warm cream background, muted green interaction accents, HTK header branding, portrait-image presentation, Blog archive descriptions, and image → title → date article openings when a featured image is supplied.
+- Duplicate CSS accumulated during iterative development was cleaned from the Blog archive and individual article layout.
 
 - [x] Brand selected: Handed the Keys
 - [x] GitHub organization created
@@ -194,7 +199,7 @@ This README is the development source of truth and should be updated when signif
 - [x] Configure GitHub Pages deployment
 - [x] Complete no-code browser publishing
 - [x] Add comments
-- [x] Add Previous Post / Next Post navigation
+- [x] Add Previous Post / Home / Next Post navigation
 - [x] Configure SEO and search services
 - [x] Publish initial live content
 - [x] Prepare site architecture for future advertising
