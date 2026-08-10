@@ -36,31 +36,35 @@ const websiteSchema = {
 	<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
 	<style>
 			main {
-				width: 960px;
-			}
+	width: 960px;
+	padding-top: 2em;
+}
 
-			.intro {
-	max-width: 760px;
-	margin: 0 auto 4.5rem;
-	padding: 2.25rem 1rem 1rem;
+.intro {
+	max-width: 680px;
+	margin: 0 auto 3rem;
+	padding: 1rem 1rem 0.25rem;
 	text-align: center;
 }
 
 .intro h1 {
-	margin: 0 0 0.2em;
+	margin: 0 0 0.15em;
+	font-size: clamp(2.2rem, 5vw, 3.2rem);
 	letter-spacing: -0.025em;
 }
 
 .intro .tagline {
-	margin: 0 0 1.1rem;
-	font-size: 1.25rem;
+	margin: 0 0 0.65rem;
+	font-size: 1.05rem;
 	font-style: italic;
 	color: var(--accent-dark);
 }
 
 .intro > p:last-child {
-	max-width: 650px;
+	max-width: 600px;
 	margin: 0 auto;
+	font-size: 0.95rem;
+	line-height: 1.55;
 	color: rgb(var(--gray));
 }
 
@@ -154,9 +158,15 @@ const websiteSchema = {
 			}
 
 			.latest-story h2,
-			.recent-stories h3 {
-				color: rgb(var(--black));
-			}
+.recent-stories h3 {
+	color: rgb(var(--black));
+	transition: color 0.2s ease;
+}
+
+.latest-story a:hover h2,
+.recent-stories a:hover h3 {
+	color: var(--accent);
+}
 
 			.latest-copy .read-more {
 	display: inline-block;
@@ -224,6 +234,28 @@ const websiteSchema = {
 	height: 100%;
 	object-fit: contain;
 	border-radius: 0;
+}
+
+.story-card-media,
+.story-media img,
+.story-media.portrait {
+	transition: box-shadow 0.2s ease;
+}
+
+.story-card-media:hover {
+	box-shadow: 0 0 0 2px var(--accent);
+}
+
+.story-media:not(.portrait):hover img {
+	box-shadow:
+		var(--box-shadow),
+		0 0 0 2px var(--accent);
+}
+
+.story-media.portrait:hover {
+	box-shadow:
+		var(--box-shadow),
+		0 0 0 2px var(--accent);
 }
 
 .story-card h3 {

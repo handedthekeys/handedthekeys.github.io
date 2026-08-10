@@ -67,8 +67,9 @@ Decap CMS local preview:
 - When a featured image is supplied, homepage and Blog listings use that real photo.
 - When no featured image is supplied, homepage and Blog listings automatically use the shared Handed the Keys default post image.
 - Individual article pages do not display the default image when no real featured image was supplied.
-- Featured photographs retain their natural aspect ratio.
-- The permanent Handed the Keys branded default post image is centralized as `DEFAULT_POST_IMAGE` in `src/consts.ts`.
+* Featured photographs retain their natural aspect ratio.
+* Portrait featured photographs use the shared textless Handed the Keys portrait background on homepage and Blog listings to fill surrounding landscape space without cropping the photograph.
+* The permanent Handed the Keys branded default post image is centralized as `DEFAULT_POST_IMAGE` in `src/consts.ts`.
 
 ## Site Structure
 
@@ -98,7 +99,7 @@ Individual posts:
 - Article body
 - Additional real photos supported through the publishing editor
 - Giscus comments powered by GitHub Discussions
-- Previous Post / Next Post navigation lets readers continue through the chronological archive.
+* Previous Post / Home / Next Post navigation lets readers continue through the chronological archive or return directly to the homepage.
 
 Footer:
 
@@ -171,6 +172,8 @@ This README is the development source of truth and should be updated when signif
 ## Status
 
 **Current phase:** Live site / launch refinement
+
+* First visual-polish pass completed for the homepage, shared header, post navigation, and portrait-image presentation.
 
 - [x] Brand selected: Handed the Keys
 - [x] GitHub organization created
