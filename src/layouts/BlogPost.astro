@@ -152,18 +152,6 @@ const blogPostingSchema = {
 	}
 }
 
-.post-navigation a {
-	display: inline-block;
-	padding: 0.65em 1em;
-	border: 1px solid var(--accent);
-	border-radius: 8px;
-	background: var(--paper);
-	color: var(--accent-dark);
-	font-weight: 700;
-	text-decoration: none;
-	transition: 0.2s ease;
-}
-
 .post-navigation a:hover {
 	background: var(--accent);
 	color: var(--surface);
@@ -189,19 +177,6 @@ const blogPostingSchema = {
 	justify-self: end;
 }
 
-@media (max-width: 520px) {
-	.post-navigation {
-		flex-direction: column;
-	}
-
-	.post-navigation a {
-		text-align: center;
-	}
-
-	.next-post {
-		margin-left: 0;
-	}
-}
 		</style>
 	</head>
 
@@ -214,19 +189,21 @@ const blogPostingSchema = {
 				</div>
 				<div class="prose">
 					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} calendarDate={pubDateCalendarDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
+	<h1>{title}</h1>
+
+	<div class="date">
+		<FormattedDate date={pubDate} calendarDate={pubDateCalendarDate} />
+		{
+			updatedDate && (
+				<div class="last-updated-on">
+					Last updated on <FormattedDate date={updatedDate} />
+				</div>
+			)
+		}
+	</div>
+
+	<hr />
+</div>
 										<slot />
 
 <nav class="post-navigation" aria-label="Post navigation">
