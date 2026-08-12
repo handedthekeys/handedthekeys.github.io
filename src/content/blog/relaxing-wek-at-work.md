@@ -1,5 +1,5 @@
 ---
-title: Relaxing Wek At Work
+title: Relaxing Week At Work
 description: Week 9 2026 - This week, I didn't have any big issues or very
   eventful days.  I did get to reminisce of the past.
 pubDate: 2026-08-11@18:20:00-07:00
