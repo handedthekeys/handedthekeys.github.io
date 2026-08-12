@@ -7,11 +7,11 @@ heroImage: ../../assets/blog/20260223_082616.jpg
 ---
 **Monday**
 
-This class looked like an Internet cafe in that there were many computers set up in a few rows.  It makes me think of an Internet cafe I remember going to when I was much younger.  I think it was called Cyber Connections.  At the time, the game was Counter Strike.  A huge LAN party of some sorts.  Each computer was much more up to date and had better graphics than anything we had at home.  We could play for $5 an hour.  It was me, my brother and two cousins.  We didn't go too often, but I remember such a good feeling of being able to all play together at the same time.
+This class looked like an Internet cafe in that there were many computers set up in a few rows.  It makes me think of an Internet cafe I remember going to when I was much younger.  I think it was called Cyber Connections.  At the time, the game was Counter Strike.  A huge LAN party of some sorts.  Each computer was much more up to date and had better graphics than anything we had at home.  We could play for $5 an hour.  It was me, my brother, and two cousins.  We didn't go too often, but I remember such a good feeling of being able to all play together at the same time.
 
 The students here were working on tests or missing work.  I think attendance was about 50% for each class.  I did not understand what the class really was.  It seemed like another failure in the school system.  The kids stayed quiet and some worked.  I was able to maintain some privacy in how the classroom was arranged.  It gave me time to catch up on my writing here and to take a look at the MIT free online courses.
 
-I did not find exactly what I was hoping for, but I can see how useful this website and the materials can be.  Most of the curses are for engineering and mathematics, which makes sense because of the school's focus.  I did find courses on Spanish, Music, Drama, and Photography.  I suppose all universities offer at least some variety of courses.  I listened to a recording from about 1969 of a person reading a short paragraph.  He then recorded the recording and repeated this process until you couldn't make out any words, just sounds of the room's resonance through speech.  It was an interesting experiment.  I understand the process, but never took it that far and put together that when we record over a recording, the vibrations from the room begin to come into play.
+I did not find exactly what I was hoping for, but I can see how useful this website and the materials can be.  Most of the courses are for engineering and mathematics, which makes sense because of the school's focus.  I did find courses on Spanish, Music, Drama, and Photography.  I suppose all universities offer at least some variety of courses.  I listened to a recording from about 1969 of a person reading a short paragraph.  He then recorded the recording and repeated this process until you couldn't make out any words, just sounds of the room's resonance through speech.  It was an interesting experiment.  I understand the process, but never took it that far and put together that when we record over a recording, the vibrations from the room begin to come into play.
 
 I also spent some time listening to a podcast and doing a few of my one a day origami crafts.  I liked the organ base and the house the best out of the few I did.  I didn't understand the building and the elephant instructions.  I messed them up.  The bomber plane was cool, complicated, and couldn't fly.  Otherwise, It would have been a good one, too.  
 
@@ -27,9 +27,7 @@ During 3rd period, one of the aides put on CNN 10 for today.  She used YouTube i
 
 I had a decent conversation with a student who moved out here this year from a more popular city and wants to be a boxer.  He has been boxing since 3rd grade.  He has been in trouble for fighting.  He lives with his dad.  His mom stayed closer to that city and plans to move again.  He needs about $120 a month to continue boxing.  He makes some money with a friend who buys CVVs and it's a gamble to have money on it.
 
-
 **Wednesday**
-
 
 Not much to say about today.  It is lunch time on a collaboration day.  As a substitute, I leave early like the kids do.
 
